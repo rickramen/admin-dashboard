@@ -8,8 +8,12 @@ body {
      font-family: 'Roboto', sans-serif;
 }
 
-h3, h4, p {
+h1, h3, h4, p {
     margin:  0;
+}
+
+h3 {
+    font-size: 25px;
 }
 
 .page-container {
@@ -89,9 +93,9 @@ header {
     padding: 20px;
     position: relative; 
     display: grid;  
-    grid-template-columns: 1fr auto; 
+    grid-template-columns: auto auto; 
+    grid-template-rows: auto auto; 
     align-items: center; 
-    border: 2px solid red;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
 }
 
@@ -101,32 +105,54 @@ header img {
 }
 
 #search-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-content: stretch; 
+    display: grid; 
+    grid-template-columns: auto 1fr; 
+    align-items: center;
     width: 100%;
-    border: 2px solid #0ea5e9;
 }
 
 #search-bar {
     background-color: #e2e8f0;
     border-radius: 12px;
     border: unset;
-    height: 40px;  
+    height: 40px;
+    width: 100%;   
     font-size: 16px;  
+    padding: 0 10px; 
+    margin-left: 10px; 
 }
 
 #search-bar:focus {
     outline: none;
 }
 
-#top-right {
-    border: 2px solid #0ea5e9;
+#right-user-info {
+    display: grid;
+    grid-template-columns: repeat(3, auto); 
+    justify-content: end; 
+    align-items: center;
+    padding-right: 100px;
+    gap: 40px;
 }
 
-#avatar {
-    width: 3rem;
-    height: 3rem;
+#left-user-info{
+    display: grid; 
+    grid-template-columns: auto 1fr; 
+    align-items: center; 
+    gap: 30px;
+    margin-top: 20px;
+    margin-left: 40px;
+    font-weight: bold;
+}
+
+#left-user-info img{
+    width: 5rem;
+    height: 5rem;
+}
+
+.avatar {
+    width: 3.5rem;
+    height: 3.5rem;
 }
 
 #button-container {
@@ -135,18 +161,19 @@ header img {
     justify-content: end; 
     gap: 10px; 
     margin-top: 10px;
-    border: 2px solid #0ea5e9;
+    padding-right: 50px;
 }
 
 header button {
     color: white;
+    font-size: 16px;
     font-weight: bold;
     background-color: #0ea5e9;
-    border-radius: 20px;
+    border-radius: 25px;
     outline: none;
     border: none;
-    height: 40px;
-    width: 100px;
+    height: 50px;
+    width: 120px;
 }
 
 header button:hover {
