@@ -146,13 +146,15 @@ header img {
 }
 
 #left-user-info img{
-    width: 5rem;
-    height: 5rem;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
 }
 
 .avatar {
-    width: 3.5rem;
-    height: 3.5rem;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
 }
 
 #button-container {
@@ -253,6 +255,7 @@ header button:hover {
 .trending-content {
     display: grid;
     grid-template-columns: auto 1fr;
+    align-items: center; 
     gap: 10px;
     margin-bottom: 20px;
 }
